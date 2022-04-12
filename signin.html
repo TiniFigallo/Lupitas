@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lupita</title>
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;600&family=Rouge+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <!--LOGO-->
+    <span class="logo"> 
+        <img src="images/Logo.png" alt="Logo" style="width: 20rem;">
+    </span>
+    <!--TITULO DEL SITIO-->
+    <span>
+        <h1>Lupita´s Nails Studio</h1>
+    </span>
+    <!--BARRA DE NAVEGACIÓN-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</li></a>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="giftcard.html">GIFTCard</a></li> 
+            <li><a href="signin.html">SignIn</a></li>
+        </ul>
+    </nav>
+</header>
+
+     <main class="Titulo">
+         <h2>Sign In</h2>
+     </main>
+
+    <main class="SubTitulo">
+        <h3>Lupita´s Memberships</h3>
+    </main>
+<div class="divsignin">
+        <form action="/" method="get" enctype="" class="formularioSignIn">
+            <input type="text" id="Username" placeholder="Usuario o email">
+            <input type="password" id="Password" placeholder="Contraseña">
+            <div class="iniciarsesion">
+            <button class="Color" type="submit">Iniciar Sesión</button>
+            </div>
+        </form>
+    
+    <section class="tabla">
+        <table border="1">
+            <caption>
+                <h3>Tipos de membresía</h3>
+            </caption>
+            <tbody>
+                <tr>
+                    <th>TIEMPO</th>
+                    <th>PRECIO</th>
+                    <th>¿Qué incluye?</th>
+                </tr>
+                <tr>
+                    <th>1 mes</th>
+                    <td>800 ARS</td>
+                    <td>1 servicio de semipermanente/esculpidas/gel/kapping, 1 retiro del producto, 2 uñas con NailArt.</td>
+                </tr>
+                <tr>
+                    <th>3 meses</th>
+                    <td>2000 ARS</td>
+                    <td>3 servicios de semipermanente/esculpidas/gel/kapping, 2 retiros del producto, 6 uñas con NailArt.</td>
+                </tr>
+                <tr>
+                        <th>6 meses</th>
+                        <td>3500 ARS</td>
+                        <td>6 servicios de semipermanente/esculpidas/gel/kapping, 5 retiros del producto y NailAirt ilimitado.</td>
+                </tr>
+                <tr>
+                    <th>1 año</th>
+                    <td>5000 ARS</td>
+                    <td>12 servicios de semipermanente/esculpidas/gel/kapping, retiros y NailArt ilimitado.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+      <div class="">
+      <form action="/" method="post" enctype="" class="formulariologin">
+              <h4>Registrate y forma parte de Lupitas Nails Studio</h4>
+              <input type="text" name= "Nombre" placeholder="Nombre" required>
+              <input type="text"name= "Apellido" placeholder="Apellido" required>
+              <input type="email" name="email" placeholder="Ingresa tu email" required> 
+              <input type= "tel" name= "phone" placeholder="Teléfono">
+              <input type="password" name= "contraseña" placeholder= "Ingresa una contraseña" required>
+              <input type="password" placeholder="Repite la contraseña" required> <br>
+              <label for="avatar">Elige una foto de perfil</label>
+              <input type="file" name="avatar" multiple accept=".jpg">
+              <h4>Tipo de membresía</h4>
+              <select name="membership">
+                  <option value="">Elige tu membresía</option>
+                  <option value="1mes">1 mes</option>
+                  <option value="3meses">3 meses</option>
+                  <option value="6meses">6 meses</option>
+                  <option value="1año">1 año</option>
+              </select>
+            <div class="botonlogin">
+              <button class="Color">Registrarme</button>
+            </div>
+    </form>
+    </div>
+</div>
+
+<footer>
+  <span>¡Contactanos!</span>
+<ul>
+    <a target="_blank" href="https://www.instagram.com/"><li><img class="Redes" src="images/LogoInstagram.png" alt="Instagram"></li></a>
+    <a target="blank_" href="https://www.facebook.com/"><li><img class="Redes" src="images/LogoFacebook.png" alt="Facebook"></li></a>
+    <a target="blank_" href="https://web.whatsapp.com/"><li><img class="Redes" src="images/LogoWhatsApp.png" alt="Whatsapp"></li></a>
+</ul>
+</footer>
+</body>
+</html>

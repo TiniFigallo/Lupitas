@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lupita</title>
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;600&family=Rouge+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!--LOGO-->
+        <span class="logo"> 
+            <img src="images/Logo.png" alt="Logo" style="width: 20rem;">
+        </span>
+        <!--TITULO DEL SITIO-->
+        <span>
+            <h1>Lupita´s Nails Studio</h1>
+        </span>
+        <!--BARRA DE NAVEGACIÓN-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</li></a>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="giftcard.html">GIFTCard</a></li> 
+                <li><a href="signin.html">SignIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="Titulo">
+        <h2>Lupita´s GIFTCard</h2>
+    </main>
+    <main class="SubTitulo">
+         <h3>¡Regala arte!</h3>
+    </main>
+    <section class="sectiongiftcard">
+        <form action="/" method="get" enctype="" class="formulariogiftcard" >
+                <label for="cliente">Esta GIFTCard valida para Lupita Nails Studio es para</label>
+                <input type="text" name="Nombre" id="cliente" placeholder="¿Para quién es?"> 
+                <label for="money">, por el monto de </label>
+                <input type="number" name="dinero" id="money" placeholder="Ingresa el monto en $ARS" required>
+                <label for="Nombre">de parte de</label>
+                <input type="text" id="Nombre" placeholder="Coloca aquí tu nombre">
+                <textarea name="massage" cols="30" rows="10">Escribe una dedicatoria</textarea>
+            <div>
+                <button class="Color" type="reset">Borrar Todo</button>
+                <button class="Color" type="submit">PAGAR Y GENERAR GIFTCARD</button>
+            </div>
+        </form>
+    </section>
+<!--comienzo del FOOTER-->
+<footer>
+      <!--Datos de contacto-->
+      <span>¡Contactanos!</span>
+    <ul>
+        <a href="https://www.instagram.com/"><li><img class="Redes" src="images/LogoInstagram.png" alt="Instagram"></li></a>
+        <a href="https://www.facebook.com/"><li><img class="Redes" src="images/LogoFacebook.png" alt="Facebook"></li></a>
+        <a href="https://web.whatsapp.com/"><li><img class="Redes" src="images/LogoWhatsApp.png" alt="Whatsapp"></li></a>
+    </ul>
+</footer>
+</body>
+</html>
