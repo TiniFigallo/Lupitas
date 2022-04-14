@@ -46,11 +46,11 @@ header nav ul {
 
 header nav ul li {
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     align-items:flex-end;  
 }
-.menuhamburgesa {
-    display: none; 
+header nav ul li:hover {
+    background-image: linear-gradient(white, pink);
 }
 
 /*>>>>>>>>>>>MEDIA QUERIES DE HEADER<<<<<<<<<<<<*/
@@ -80,6 +80,7 @@ header nav ul li {
         padding: 5px;
         align-items:flex-end;  
     } 
+
     header .logo {
         margin: none;
         padding-right: none;
@@ -136,6 +137,11 @@ header nav ul li {
     font-size: 25px;
     text-align: center;
     font-family: 'Roboto Serif', serif;
+
+}
+.AboutLupita p:hover {
+    transform: scale(1.1);
+    transition: 2s;
 }
 
 .Titulo {
@@ -189,6 +195,10 @@ main .Services {
     width: 500px;
     height: 500px;
 } 
+.photos img:hover {
+    transform: scale(1.1);
+    transition: 1s ease-in;
+}
 
 @media screen and (max-width: 320px) {
     .photos img {
@@ -304,6 +314,10 @@ main .Services {
     padding: 10px;
     margin-bottom: 50px;
     font-family: 'Roboto Serif', serif;
+    transition: 1s ease-in;
+  }
+  .formulariocontact:hover {
+      transform: scale(1.1);
   }
   
 .divcontact {
@@ -329,6 +343,7 @@ main .Services {
     justify-content: center;
     align-items: center;
 }
+
 .divsignin {
     display: grid;
     grid-template-columns: 600px 600px;
@@ -461,4 +476,8 @@ footer ul li {
     height: 30px;
     width: 30px;
     border-radius: 50%;
+}
+.Redes:hover {
+    transform: scale(1.5);
+    transition: 1s ease-in;
 }
