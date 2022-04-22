@@ -262,8 +262,8 @@ main .Services {
 /*FIN GRID DE FOTOS*/
 
 /*TABLA DE SIGN IN*/
-.tabla {
-    margin-left: 50px;
+.table {
+    margin-left: 150px;
     grid-area: tabla;
 }
 
@@ -346,8 +346,8 @@ main .Services {
 
 .divsignin {
     display: grid;
-    grid-template-columns: 600px 600px;
-    grid-template-rows: 300px auto;
+    grid-template-columns: 800px 600px;
+    grid-template-rows: 400px auto;
     grid-template-areas: 
     "tabla SignIn"
     "LogIn LogIn"
