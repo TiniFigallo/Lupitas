@@ -97,7 +97,6 @@ header nav ul li:hover {
         justify-items: center;
         align-items: center;
         margin-top:70px;
-        margin-bottom: 150px;
     }
     header span h1 {
         display: none;
@@ -162,8 +161,7 @@ header nav ul li:hover {
 
 main .Services {
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
@@ -215,51 +213,6 @@ main .Services {
     }
 }
 
-/*GRIDS A FOTOS*/
-
-/* .gallery__Grid {
-    display: grid;
-    grid-template-rows: 50px repeat(6, 1fr); 
-    grid-template-columns: 30% 30% 40%;
-    grid-template-rows: repeat(12, 500px);
-    grid-template-areas: 
-     "titulo titulo titulo"
-    "img1 img2 principal"
-    "img3 img4 principal"
-;
-}
-#titulo__Gallery {
-    grid-area: titulo;
-    text-align: center;
-}
-.foto1 {
-    grid-area: img1;
-}
-.foto2 {
-    grid-area: img2;
-}
-.foto3 {
-    grid-area: img3;
-}
-.foto4 {
-    grid-area: img4;
-}
-.foto5 {
-    grid-area: principal;
-}  */
-
-/* #grid__fotos {
-    display: grid;
-    grid-template-columns: 40% 1fr 1fr;
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "img1 img2 principal"
-    "img3 img4 principal"
-;
-} */
-
-/*FIN GRID DE FOTOS*/
 
 /*TABLA DE SIGN IN*/
 .table {
@@ -378,10 +331,11 @@ textarea {
 
   /*<<<<<<<<<<<<<<MEDIA QUERIES DE SIGN IN>>>>>>><*/
   @media screen and (max-width: 320px) {
+
       .divsignin {
         display: grid;
-        grid-template-columns: 320px;
-        grid-template-rows: 300px 400px;
+        grid-template-columns: 500px;
+        grid-template-rows: 40% 60%;
         grid-template-areas: 
         "SignIn"
         "LogIn"
@@ -389,11 +343,11 @@ textarea {
         align-items: center;
         justify-items: center;
     }
-      .tabla {
+      .table {
           display: none;
     }
       .formulariologin {
-        margin: 0 0 100px 0;
+        margin: 50px 0 100px 0;
         padding: 10px;
         justify-content: space-around;
         align-items: space-around;
@@ -410,6 +364,7 @@ textarea {
         width: 300px;
     }
   }
+
   @media (max-width: 768px) {
     .divsignin {
         display: grid;
@@ -422,7 +377,7 @@ textarea {
         align-content: center;
         justify-content: center;
     }
-    .tabla {
+    .table {
           display: none;
     }
     .formulariologin {
@@ -439,42 +394,34 @@ textarea {
   }
 
 /*FOOTER*/
-/*FOOTER CON FLEXBOX ANTERIOR*/
-/* footer {
-    grid-area: footer;
-    background-color: #E1BAA8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 footer {
     padding: 50px 0 50px 0;
     grid-area: footer;
     background-color: #E1BAA8;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
     grid-template-areas: 
-    "texto"
-    "redes";
+    "redes"
+    "derechos";
 }
-footer span {
+
+footer span .rights {
     font-family: 'Roboto Serif', serif;
     font-size: small;
-    grid-area: texto;
+    grid-area: derechos;
 }
 footer ul li {
     list-style: none;
     align-items: center;
     display: inline;
 }
+
 .Redes {
     grid-area: redes;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
 }
 .Redes:hover {
