@@ -1,0 +1,339 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  color: black;
+  font-family: 'Roboto Serif', serif;
+  text-decoration: none; }
+
+/* VARIABLES */
+header {
+  height: 20rem;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 15rem 50px;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: "logo nombreprincipal" "logo nav"; }
+  header .logo {
+    margin: 10px;
+    padding-right: 10px;
+    grid-area: logo; }
+  header span h1 {
+    display: inline-block;
+    font-family: 'Rouge Script', cursive;
+    font-size: 7rem;
+    margin: none;
+    border: none;
+    grid-area: nombreprincipal; }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: nav; }
+    header nav ul li {
+      border-radius: 10px;
+      padding: 10px;
+      align-items: flex-end; }
+      header nav ul li:hover {
+        background-image: linear-gradient(white, pink); }
+
+/* MEDIA QUERIES DE HEADER */
+@media (max-width: 768px) {
+  header {
+    display: grid;
+    grid-template-columns: 35% auto;
+    grid-template-rows: 60% auto;
+    grid-template-areas: "logo nombreprincipal" "logo nav";
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 50px; }
+    header .logo {
+      margin: none;
+      padding-right: none; }
+    header span h1 {
+      font-size: 3rem; }
+    header nav ul {
+      display: flex;
+      justify-content: space-evenly;
+      width: 400px; }
+      header nav ul li {
+        border-radius: 10px;
+        padding: 5px;
+        align-items: flex-end; } }
+
+@media screen and (max-width: 320px) {
+  header {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% auto;
+    grid-template-areas: "logo" "nav";
+    justify-items: center;
+    align-items: center;
+    margin-top: 70px; }
+    header .logo {
+      padding-right: none; }
+      header .logo img {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-left: 10px; }
+    header span h1 {
+      display: none; }
+    header nav {
+      margin-top: 70px;
+      background-color: #D1A38C;
+      width: 320px; }
+      header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; } }
+
+/* ESTILOS INDEX */
+.AboutLupita {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 100px;
+  background-image: url(../images/backround.jpg);
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Roboto Serif', serif; }
+  .AboutLupita:hover {
+    transform: scale(1.1);
+    transition: 2s; }
+
+/* MEDIA QUERIES INDEX */
+@media screen and (max-width: 320px) {
+  .AboutLupita {
+    background-image: url(../images/backround.jpg);
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto Serif', serif; } }
+
+/* ESTILOS TITULOS Y SUBTITULOS GENERAL */
+.Titulo {
+  background-image: url(../images/backround.jpg);
+  font-family: 'Roboto Serif', serif;
+  text-align: center;
+  padding: 20px; }
+
+.SubTitulo {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto Serif', serif;
+  font-size: medium;
+  padding: 10px;
+  font-style: italic; }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 320px) {
+  .SubTitulo {
+    display: none; } }
+
+/* ESTILOS SERVICES */
+main .Services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+/* ESTILOS GALLERY */
+.photos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .photos img {
+    padding: 5px;
+    width: 500px;
+    height: 500px; }
+    .photos img:hover {
+      transform: scale(1.1);
+      transition: 1s ease-in; }
+
+/* MEDIA QUERIES GALLERY */
+@media (max-width: 768px) {
+  .photos img {
+    width: 250px;
+    height: 250px;
+    padding: 3px; } }
+
+/*ESTILOS DE SIGN IN*/
+.divsignin {
+  display: grid;
+  grid-template-columns: 800px 600px;
+  grid-template-rows: 400px auto;
+  grid-template-areas: "tabla SignIn" "LogIn LogIn";
+  align-items: center;
+  justify-items: center; }
+  .divsignin .formularioSignIn {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: stretch;
+    align-items: stretch;
+    background-color: #C4C4C4;
+    grid-area: SignIn;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Roboto Serif', serif; }
+    .divsignin .formularioSignIn .iniciarsesion {
+      display: grid;
+      justify-content: center;
+      align-items: center; }
+  .divsignin .table {
+    margin-left: 150px;
+    grid-area: tabla; }
+  .divsignin .formulariologin {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: stretch;
+    background-color: #C4C4C4;
+    width: 500px;
+    grid-area: LogIn;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    font-family: 'Roboto Serif', serif; }
+    .divsignin .formulariologin .botonlogin {
+      display: grid;
+      justify-content: center;
+      align-items: center; }
+
+/*Botones de Iniciar sesión y Registrarse con .Color*/
+.Color {
+  background-color: #D1A38C; }
+
+legend {
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+textarea {
+  max-height: 28px;
+  max-width: 200px; }
+
+/* ESTILOS BOTONES DE FORMS */
+button, input, select, textarea {
+  font-family: 'Roboto Serif', serif;
+  margin: 0;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5); }
+
+/*<<<<<<<<<<<<<<MEDIA QUERIES DE SIGN IN>>>>>>><*/
+@media screen and (max-width: 320px) {
+  .divsignin {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: "SignIn" "LogIn";
+    align-items: center;
+    justify-items: center; }
+    .divsignin .table {
+      display: none; }
+    .divsignin .formulariologin {
+      margin: 50px 0 100px 0;
+      padding: 10px;
+      justify-content: space-around;
+      align-items: space-around;
+      background-color: #C4C4C4;
+      height: fit-content;
+      width: 300px;
+      grid-area: LogIn;
+      overflow: hidden; } }
+
+@media (max-width: 768px) {
+  .divsignin {
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 300px 400px;
+    grid-template-areas: "SignIn" "LogIn";
+    align-content: center;
+    justify-content: center; }
+    .divsignin .table {
+      display: none; }
+    .divsignin .formulariologin {
+      margin: 0 0 100px 0;
+      padding: 10px;
+      justify-content: space-around;
+      align-items: space-around;
+      background-color: #C4C4C4;
+      height: fit-content;
+      width: 300px;
+      grid-area: LogIn;
+      overflow: hidden; } }
+
+/* ESTILOS CONTACT */
+.divcontact {
+  display: grid;
+  justify-content: center;
+  justify-items: center; }
+  .divcontact .formulariocontact {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #C4C4C4;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    font-family: 'Roboto Serif', serif;
+    transition: 1s ease-in; }
+    .divcontact .formulariocontact:hover {
+      transform: scale(1.1); }
+
+/* MEDIA QUERIES DE CONTACT */
+@media screen and (max-width: 320px) {
+  .formulariocontact {
+    margin: 10px;
+    background-color: #C4C4C4;
+    height: fit-content;
+    width: 300px; } }
+
+.sectiongiftcard {
+  display: grid;
+  justify-content: center;
+  justify-items: center; }
+  .sectiongiftcard .formulariogiftcard {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    align-items: stretch;
+    justify-content: center;
+    background-color: #C4C4C4;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Roboto Serif', serif; }
+
+/*FOOTER*/
+footer {
+  padding: 50px 0 50px 0;
+  grid-area: footer;
+  background-color: #E1BAA8;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "redes" "derechos"; }
+  footer .redesLista li {
+    list-style: none;
+    align-items: center;
+    display: inline; }
+    footer .redesLista li .redes {
+      grid-area: redes;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%; }
+      footer .redesLista li .redes:hover {
+        transform: scale(1.5);
+        transition: 1s ease-in; }

@@ -1,0 +1,133 @@
+/*ESTILOS DE SIGN IN*/
+
+
+.divsignin {
+    display: grid;
+    grid-template-columns: 800px 600px;
+    grid-template-rows: 400px auto;
+    grid-template-areas: 
+    "tabla SignIn"
+    "LogIn LogIn"
+    ; 
+    align-items: center;
+    justify-items: center;
+    .formularioSignIn {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: stretch;
+        align-items: stretch;
+        background-color:#C4C4C4;
+        grid-area: SignIn;
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+        padding: 10px;
+        font-family: 'Roboto Serif', serif;
+     .iniciarsesion {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        } 
+    } 
+    .table {
+    margin-left: 150px;
+    grid-area: tabla;
+    }
+    .formulariologin {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: stretch;
+        background-color:#C4C4C4;
+        width: 500px;
+        grid-area: LogIn;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 50px;
+        font-family: 'Roboto Serif', serif;
+        .botonlogin {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+ }
+
+ /*Botones de Iniciar sesión y Registrarse con .Color*/
+.Color {
+    background-color: #D1A38C;
+}
+legend {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+textarea {
+    max-height: 28px;
+    max-width: 200px;
+}
+/* ESTILOS BOTONES DE FORMS */
+button, input, select, textarea {
+    font-family: 'Roboto Serif', serif;
+    margin: 0;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+/*<<<<<<<<<<<<<<MEDIA QUERIES DE SIGN IN>>>>>>><*/
+  @media screen and (max-width: 320px) {
+
+      .divsignin {
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: 40% 60%;
+        grid-template-areas: 
+        "SignIn"
+        "LogIn"
+        ; 
+        align-items: center;
+        justify-items: center;
+        .table {
+            display: none;
+        }
+        .formulariologin {
+          margin: 50px 0 100px 0;
+          padding: 10px;
+          justify-content: space-around;
+          align-items: space-around;
+          background-color:#C4C4C4;
+          height: fit-content;
+          width: 300px;
+          grid-area: LogIn;
+          overflow: hidden;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .divsignin {
+        display: grid;
+        grid-template-columns: 320px;
+        grid-template-rows: 300px 400px;
+        grid-template-areas: 
+        "SignIn"
+        "LogIn"
+        ; 
+        align-content: center;
+        justify-content: center;
+        .table {
+        display: none;
+        }
+        .formulariologin {
+        margin: 0 0 100px 0;
+        padding: 10px;
+        justify-content: space-around;
+        align-items: space-around;
+        background-color:#C4C4C4;
+        height: fit-content;
+        width: 300px;
+        grid-area: LogIn;
+        overflow: hidden;
+        }
+    }
+}

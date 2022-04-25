@@ -1,0 +1,112 @@
+// ESTILOS HEADER
+
+header {
+    height: 20rem;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 15rem 50px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    "logo nombreprincipal"
+    "logo nav";
+    .logo {
+        margin: 10px;
+        padding-right: 10px;
+        grid-area: logo;
+    }
+    span h1 {
+        display: inline-block;
+        font-family: 'Rouge Script', cursive;
+        font-size: 7rem;
+        margin: none;
+        border: none;  
+        grid-area: nombreprincipal;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        grid-area: nav;
+        li {
+            border-radius: 10px;
+            padding: 10px;
+            align-items:flex-end; 
+            &:hover {
+                background-image: linear-gradient(white, pink);
+            }
+        }
+    }
+}
+
+/* MEDIA QUERIES DE HEADER */
+
+@media (max-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: 35% auto;
+        grid-template-rows: 60% auto;
+        grid-template-areas: 
+        "logo nombreprincipal"
+        "logo nav";
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 50px;
+        .logo {
+            margin: none;
+            padding-right: none;
+        }   
+        span h1 {
+            font-size: 3rem;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            width: 400px;
+            li {
+                border-radius: 10px;
+                padding: 5px;
+                align-items:flex-end;  
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 60% auto;
+        grid-template-areas: 
+        "logo"
+        "nav";
+        justify-items: center;
+        align-items: center;
+        margin-top:70px;
+        .logo {
+            padding-right: none;
+            img {
+                width: 300px;
+                height: 300px;
+                border: 1px solid black;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+        }  
+        span h1 {
+            display: none;
+        }
+        nav {
+            margin-top: 70px;
+            background-color: #D1A38C;
+            width: 320px;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+        }
+    }
+}

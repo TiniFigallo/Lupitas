@@ -1,0 +1,24 @@
+/* ESTILOS TITULOS Y SUBTITULOS GENERAL */
+.Titulo {
+    background-image: url(../images/backround.jpg);
+    font-family: 'Roboto Serif', serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.SubTitulo {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Serif', serif;
+    font-size: medium;
+    padding: 10px;
+    font-style: italic;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 320px) { 
+    .SubTitulo {
+        display: none;
+    }
+}
+
