@@ -1,18 +1,12 @@
 .sectiongiftcard {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
+    @include centradoFlex;
     .formulariogiftcard {
         display: flex;
         flex-direction: column;
         margin: 50px;
-        align-items: stretch;
-        justify-content: center;
         background-color:#C4C4C4;
-        height: fit-content;
-        width: fit-content;
         border-radius: 20px;
         padding: 10px;
-        font-family: 'Roboto Serif', serif;
+        font-family: $Roboto;
     }
 }

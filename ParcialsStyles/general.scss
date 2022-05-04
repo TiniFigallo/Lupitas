@@ -11,3 +11,15 @@ a {
 }
 
 /* VARIABLES */
+
+$fondoRosita: #E1BAA8;
+$Roboto: 'Roboto Serif', serif;
+
+@mixin centradoFlex () {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+

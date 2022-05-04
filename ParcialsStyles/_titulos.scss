@@ -1,7 +1,7 @@
 /* ESTILOS TITULOS Y SUBTITULOS GENERAL */
 .Titulo {
     background-image: url(../images/backround.jpg);
-    font-family: 'Roboto Serif', serif;
+    font-family: $Roboto;
     text-align: center;
     padding: 20px;
 }
@@ -9,7 +9,7 @@
 .SubTitulo {
     display: flex;
     justify-content: center;
-    font-family: 'Roboto Serif', serif;
+    font-family: $Roboto;
     font-size: medium;
     padding: 10px;
     font-style: italic;

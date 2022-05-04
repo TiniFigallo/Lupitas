@@ -45,30 +45,20 @@ header {
 @media (max-width: 768px) {
     header {
         display: grid;
-        grid-template-columns: 35% auto;
-        grid-template-rows: 60% auto;
+        grid-template-rows: 400px 70px;
         grid-template-areas: 
-        "logo nombreprincipal"
-        "logo nav";
+        "logo"
+        "nav";
         justify-items: center;
         align-items: center;
-        margin-bottom: 50px;
+        height: 470px;
+    
         .logo {
-            margin: none;
+            margin-bottom: none;
             padding-right: none;
         }   
         span h1 {
-            font-size: 3rem;
-        }
-        nav ul {
-            display: flex;
-            justify-content: space-evenly;
-            width: 400px;
-            li {
-                border-radius: 10px;
-                padding: 5px;
-                align-items:flex-end;  
-            } 
+            display: none;
         }
     }
 }

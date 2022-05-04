@@ -46,25 +46,16 @@ header {
 @media (max-width: 768px) {
   header {
     display: grid;
-    grid-template-columns: 35% auto;
-    grid-template-rows: 60% auto;
-    grid-template-areas: "logo nombreprincipal" "logo nav";
+    grid-template-rows: 400px 70px;
+    grid-template-areas: "logo" "nav";
     justify-items: center;
     align-items: center;
-    margin-bottom: 50px; }
+    height: 470px; }
     header .logo {
-      margin: none;
+      margin-bottom: none;
       padding-right: none; }
     header span h1 {
-      font-size: 3rem; }
-    header nav ul {
-      display: flex;
-      justify-content: space-evenly;
-      width: 400px; }
-      header nav ul li {
-        border-radius: 10px;
-        padding: 5px;
-        align-items: flex-end; } }
+      display: none; } }
 
 @media screen and (max-width: 320px) {
   header {
@@ -115,19 +106,19 @@ header {
     font-size: 15px;
     padding: 10px;
     text-align: center;
-    font-family: 'Roboto Serif', serif; } }
+    font-family: "Roboto Serif", serif; } }
 
 /* ESTILOS TITULOS Y SUBTITULOS GENERAL */
 .Titulo {
   background-image: url(../images/backround.jpg);
-  font-family: 'Roboto Serif', serif;
+  font-family: "Roboto Serif", serif;
   text-align: center;
   padding: 20px; }
 
 .SubTitulo {
   display: flex;
   justify-content: center;
-  font-family: 'Roboto Serif', serif;
+  font-family: "Roboto Serif", serif;
   font-size: medium;
   padding: 10px;
   font-style: italic; }
@@ -140,9 +131,9 @@ header {
 /* ESTILOS SERVICES */
 main .Services {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 50px;
   margin-bottom: 50px; }
 
@@ -210,25 +201,22 @@ main .Services {
       justify-content: center;
       align-items: center; }
 
-/*Botones de Iniciar sesión y Registrarse con .Color*/
-.Color {
-  background-color: #D1A38C; }
-
-legend {
-  width: 1px;
-  height: 1px;
-  overflow: hidden; }
-
 textarea {
   max-height: 28px;
   max-width: 200px; }
 
 /* ESTILOS BOTONES DE FORMS */
-button, input, select, textarea {
+.btn_style, .btn {
   font-family: 'Roboto Serif', serif;
   margin: 0;
   padding: 5px;
   box-shadow: rgba(0, 0, 0, 0.5); }
+
+/*Botones de Iniciar sesión y Registrarse con estilos diferentes*/
+.btn {
+  background-color: #D1A38C; }
+  .btn:hover {
+    transform: scale(1.1); }
 
 /*<<<<<<<<<<<<<<MEDIA QUERIES DE SIGN IN>>>>>>><*/
 @media screen and (max-width: 320px) {
@@ -286,7 +274,7 @@ button, input, select, textarea {
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 50px;
-    font-family: 'Roboto Serif', serif;
+    font-family: "Roboto Serif", serif;
     transition: 1s ease-in; }
     .divcontact .formulariocontact:hover {
       transform: scale(1.1); }
@@ -300,21 +288,17 @@ button, input, select, textarea {
     width: 300px; } }
 
 .sectiongiftcard {
-  display: grid;
+  display: flex;
   justify-content: center;
-  justify-items: center; }
+  align-items: center; }
   .sectiongiftcard .formulariogiftcard {
     display: flex;
     flex-direction: column;
     margin: 50px;
-    align-items: stretch;
-    justify-content: center;
     background-color: #C4C4C4;
-    height: fit-content;
-    width: fit-content;
     border-radius: 20px;
     padding: 10px;
-    font-family: 'Roboto Serif', serif; }
+    font-family: "Roboto Serif", serif; }
 
 /*FOOTER*/
 footer {

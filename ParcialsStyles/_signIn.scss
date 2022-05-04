@@ -53,26 +53,26 @@
     }
  }
 
- /*Botones de Iniciar sesión y Registrarse con .Color*/
-.Color {
-    background-color: #D1A38C;
-}
-legend {
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
 textarea {
     max-height: 28px;
     max-width: 200px;
 }
 /* ESTILOS BOTONES DE FORMS */
-button, input, select, textarea {
+.btn_style {
     font-family: 'Roboto Serif', serif;
     margin: 0;
     padding: 5px;
     box-shadow: rgba(0, 0, 0, 0.5);
 }
+ /*Botones de Iniciar sesión y Registrarse con estilos diferentes*/
+.btn {
+    @extend .btn_style;
+    background-color: #D1A38C;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
 
 /*<<<<<<<<<<<<<<MEDIA QUERIES DE SIGN IN>>>>>>><*/
   @media screen and (max-width: 320px) {

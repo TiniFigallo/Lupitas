@@ -14,7 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;600&family=Rouge+Script&display=swap" rel="stylesheet">
-</head>
+    <meta name="keywords" content="Nails, Studio, Lupita, Uñas, Beauty, NailArt, Semipermanente, Color">
+    <meta name="description" content="Salón de belleza de manos en el centro de Mar del Plata, Argentina. Ofrece servicio de membresía mensual y anual.">
+  </head>
 <body>
     <header>
         <!--LOGO-->
@@ -33,9 +35,9 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="navbar-brand" href="index.html">Home</a>
-                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Services
@@ -73,16 +75,16 @@
     </main>
     <section class="sectiongiftcard">
         <form action="/" method="get" enctype="" class="formulariogiftcard" >
-                <label for="cliente">Esta GIFTCard valida para Lupita Nails Studio es para</label>
-                <input type="text" name="Nombre" id="cliente" placeholder="¿Para quién es?"> 
-                <label for="money">, por el monto de </label>
-                <input type="number" name="dinero" id="money" placeholder="Ingresa el monto en $ARS" required>
-                <label for="Nombre">de parte de</label>
-                <input type="text" id="Nombre" placeholder="Coloca aquí tu nombre">
-                <textarea name="massage" cols="30" rows="10">Escribe una dedicatoria</textarea>
+                <label for="cliente" class="btn_style">Esta GIFTCard valida para Lupita Nails Studio es para</label>
+                <input type="text" name="Nombre" id="cliente" class="btn_style" placeholder="¿Para quién es?"> 
+                <label for="money">Por el monto de </label>
+                <input type="number" name="dinero" id="money" class="btn_style" placeholder="Ingresa el monto en $ARS" required>
+                <label for="Nombre">De parte de...</label>
+                <input type="text" id="Nombre" class="btn_style" placeholder="Coloca aquí tu nombre">
+                <textarea name="massage" cols="30" class="btn_style" rows="10">Escribe una dedicatoria</textarea>
             <div>
-                <button class="Color" type="reset">Borrar Todo</button>
-                <button class="Color" type="submit">PAGAR Y GENERAR GIFTCARD</button>
+                <button class="btn" type="reset">Borrar Todo</button>
+                <button class="btn" type="submit">PAGAR Y GENERAR GIFTCARD</button>
             </div>
         </form>
     </section>
