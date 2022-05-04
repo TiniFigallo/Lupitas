@@ -1,0 +1,30 @@
+/* ESTILOS CONTACT */
+.divcontact {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    .formulariocontact {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        background-color:#C4C4C4;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 50px;
+        font-family: $Roboto;
+        transition: 1s ease-in;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+/* MEDIA QUERIES DE CONTACT */
+
+@media screen and (max-width: 320px) {
+        .formulariocontact {
+        margin: 10px;
+        background-color:#C4C4C4;
+        height: fit-content;
+        width: 300px;
+    }
+}

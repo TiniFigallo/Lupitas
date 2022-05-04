@@ -1,0 +1,25 @@
+// ESTILOS GENERALES SASS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: black;
+    font-family: 'Roboto Serif', serif;
+    text-decoration: none;
+}
+
+/* VARIABLES */
+
+$fondoRosita: #E1BAA8;
+$Roboto: 'Roboto Serif', serif;
+
+@mixin centradoFlex () {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+

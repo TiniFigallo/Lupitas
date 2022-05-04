@@ -13,8 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;600&family=Rouge+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="css/NewStyle.css">
+    <meta name="keywords" content="Nails, Studio, Lupita, Uñas, Beauty, NailArt, Semipermanente, Color">
+    <meta name="description" content="Salón de belleza de manos en el centro de Mar del Plata, Argentina. Ofrece servicio de membresía mensual y anual.">
+  </head>
 <header>
     <!--LOGO-->
     <span class="logo"> 
@@ -32,9 +34,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="navbar-brand" href="index.html">Home</a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Services
@@ -74,10 +76,10 @@
     </main>
 <div class="divsignin">
         <form action="/" method="get" enctype="" class="formularioSignIn">
-            <input type="text" id="Username" placeholder="Usuario o email">
-            <input type="password" id="Password" placeholder="Contraseña">
+            <input class="btn_style" type="text" id="Username" placeholder="Usuario o email">
+            <input class="btn_style" type="password" id="Password" placeholder="Contraseña">
             <div class="iniciarsesion">
-            <button class="Color" type="submit">Iniciar Sesión</button>
+            <button class="btn" type="submit">Iniciar Sesión</button>
             </div>
         </form>
         <table class="table">
@@ -115,16 +117,16 @@
       <div class="">
       <form action="/" method="post" enctype="" class="formulariologin">
               <h4>Registrate y forma parte de Lupitas Nails Studio</h4>
-              <input type="text" name= "Nombre" placeholder="Nombre" required>
-              <input type="text"name= "Apellido" placeholder="Apellido" required>
-              <input type="email" name="email" placeholder="Ingresa tu email" required> 
-              <input type= "tel" name= "phone" placeholder="Teléfono">
-              <input type="password" name= "contraseña" placeholder= "Ingresa una contraseña" required>
-              <input type="password" placeholder="Repite la contraseña" required> <br>
-              <label for="avatar">Elige una foto de perfil</label>
-              <input type="file" name="avatar" multiple accept=".jpg">
+              <input class="btn_style" type="text" name= "Nombre" placeholder="Nombre" required>
+              <input class="btn_style" type="text"name= "Apellido" placeholder="Apellido" required>
+              <input class="btn_style" type="email" name="email" placeholder="Ingresa tu email" required> 
+              <input class="btn_style" type= "tel" name= "phone" placeholder="Teléfono">
+              <input class="btn_style" type="password" name= "contraseña" placeholder= "Ingresa una contraseña" required>
+              <input class="btn_style" type="password" placeholder="Repite la contraseña" required> <br>
+              <label class="btn_style" for="avatar">Elige una foto de perfil</label>
+              <input class="btn_style" type="file" name="avatar" multiple accept=".jpg">
               <h4>Tipo de membresía</h4>
-              <select name="membership">
+              <select class="btn_style" name="membership">
                   <option value="">Elige tu membresía</option>
                   <option value="1mes">1 mes</option>
                   <option value="3meses">3 meses</option>
@@ -132,17 +134,17 @@
                   <option value="1año">1 año</option>
               </select>
             <div class="botonlogin">
-              <button class="Color">Registrarme</button>
+              <button class="btn">Registrarme</button>
             </div>
     </form>
     </div>
 </div>
 
 <footer>
-    <ul class="redes">
-        <a href="https://www.instagram.com/"><li><img class="Redes" src="images/LogoInstagram.png" alt="Instagram"></li></a>
-        <a href="https://www.facebook.com/"><li><img class="Redes" src="images/LogoFacebook.png" alt="Facebook"></li></a>
-        <a href="https://web.whatsapp.com/"><li><img class="Redes" src="images/LogoWhatsApp.png" alt="Whatsapp"></li></a>
+    <ul class="redesLista">
+        <a href="https://www.instagram.com/"><li><img class="redes" src="images/LogoInstagram.png" alt="Instagram"></li></a>
+        <a href="https://www.facebook.com/"><li><img class="redes" src="images/LogoFacebook.png" alt="Facebook"></li></a>
+        <a href="https://web.whatsapp.com/"><li><img class="redes" src="images/LogoWhatsApp.png" alt="Whatsapp"></li></a>
     </ul>
 <span class="rights">© 2022 Lupita, Inc. All right reserved</span>
 </footer>

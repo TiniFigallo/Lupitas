@@ -1,0 +1,30 @@
+/*FOOTER*/
+
+footer {
+    padding: 50px 0 50px 0;
+    grid-area: footer;
+    background-color: $fondoRosita;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+    "redes"
+    "derechos";
+    .redesLista {
+            li {
+                list-style: none;
+                align-items: center;
+                display: inline;
+            .redes {
+                grid-area: redes;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                &:hover {
+                transform: scale(1.5);
+                transition: 1s ease-in;
+                }
+            }
+        }
+    }
+}

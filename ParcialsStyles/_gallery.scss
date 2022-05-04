@@ -1,0 +1,25 @@
+/* ESTILOS GALLERY */
+.photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    img {
+        padding: 5px;
+        width: 500px;
+        height: 500px;
+        &:hover {
+            transform: scale(1.1);
+            transition: 1s ease-in;
+        }
+    } 
+}
+
+/* MEDIA QUERIES GALLERY */
+
+@media (max-width: 768px) {
+    .photos img {
+    width: 250px;
+    height: 250px;
+    padding: 3px;
+    }
+}
