@@ -27,4 +27,16 @@ footer {
             }
         }
     }
+
+    @media (max-width: 320px) {
+        .redesLista {
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+        .rights {
+                display: none;
+        }
+    
+    }
 }
